@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Input"
+    android:background="#FFFFFF"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <EditText
+        android:id="@+id/et_input"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="3"
+        android:inputType="textMultiLine"
+        android:background="@drawable/round_shape"
+        android:ems="10"
+        android:gravity="top"
+        android:lineSpacingExtra="10dp"
+        android:scrollbars="vertical"
+        android:scrollbarThumbVertical="@color/colorPrimaryDark"
+        android:hint="请按以下格式输入（注意标点符号均为英文格式）:\n\n操作系统:2000,XP,2003\n浏览器:IE6.0,IE7,0TT\n杀毒软件:卡巴,金山,诺顿"
+        android:selectAllOnFocus="true"
+        android:textColorHint="#9b9b9b"
+        android:textColor="#3f434c"
+        android:textSize="18sp"
+
+        />
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="#80CBC4"
+        android:text="自动生成"
+        android:layout_weight="0.5"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"/>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Help"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#3f434c"
+        android:layout_margin="20dp"
+        android:lineSpacingExtra="10dp"
+        android:textSize="16sp"
+        android:text="  这是一个正交表测试用例自动生成工具，用户通过输入因素数（变量）和水平数（取值）自动查找正交表，并映射测试用例。"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textColor="#3f434c"
+        android:textSize="16sp"
+        android:text="使用范围:仅支持标准正交表和部分混合正交表"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:text="标准正交表例子示范(点击即可复制):"
+        android:textSize="16sp"
+        android:textColor="#3f434c"/>
+    <TextView
+        android:id="@+id/standard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_shape"
+        android:lineSpacingExtra="10dp"
+        android:text="操作系统:2000,XP,2003\n浏览器:IE6.0,IE7.0,TT\n杀毒软件:卡巴,金山,诺顿"
+        android:textColor="#9b9b9b" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="混合正交表例子示范:"
+        android:textSize="16sp"
+        android:textColor="#3f434c"/>
+    <TextView
+        android:id="@+id/complex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_shape"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:lineSpacingExtra="10dp"
+        android:text="A:A1,A2\nB:B1,B2\nC:C1,C2\nD:D1,D2\nE:E1,E2,E3,E4"
+        android:textColor="#9b9b9b"/>
+
+</LinearLayout>
